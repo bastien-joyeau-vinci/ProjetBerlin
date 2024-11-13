@@ -49,5 +49,11 @@ describe("getFiveMinutesRow function should return the Berlin five minutes of a 
     expect(result).toBe('YYOOOOOOOOO');
   })
 
+  it("Test de 15 minutes", function () {
+    const result = main.getFiveMinutesRow(15);
+    expect(result).toBe('YYROOOOOOOO');
+  })
+
+
   
 })
