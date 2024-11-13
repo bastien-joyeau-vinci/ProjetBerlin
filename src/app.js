@@ -33,4 +33,9 @@ export class Main{
         }
         return res.join("");
     }
+
+    getSeconds(seconds) { 
+        if(seconds%2 == 0) return "R"; return "O"; 
+        }
+        
 }

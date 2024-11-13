@@ -147,3 +147,14 @@ describe("getFiveHourRow function should return the Berlin Five hours of a digit
     })
 
 })
+
+describe("getSeconds function should return the Berlin seconds of a digital hour", function () {
+
+  const main = new Main();
+
+  it("Test de 0 secondes", function () {
+    const result = main. getSeconds (0);
+    expect(result).toBe('R');
+  })
+
+})
