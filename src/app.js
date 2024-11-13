@@ -19,16 +19,16 @@ export class Main{
     }
     getOneHourRow(hours) {
         let res = ["O", "O", "O", "O"];
-        let HoursOn = hours % 5;
-        for (let j = 0; j < HoursOn; j++) {
+        let hoursOn = hours % 5;
+        for (let j = 0; j < hoursOn; j++) {
             res[j] = "R";
         }
         return res.join("");
     }
-    GetFiveHoursRow(hours){
+    getFiveHoursRow(hours){
         let res = ["O", "O", "O", "O"];
-        let FiveHoursOn = Math.floor(hours / 5);
-        for (let j = 0; j < FiveHoursOn; j++) {
+        let fiveHoursOn = Math.floor(hours / 5);
+        for (let j = 0; j < fiveHoursOn; j++) {
             res[j] = "R";
         }
         return res.join("");
