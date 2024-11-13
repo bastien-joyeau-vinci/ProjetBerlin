@@ -137,6 +137,9 @@ describe("getFiveHourRow function should return the Berlin Five hours of a digit
         const result = main.getFiveHoursRow(10);
         expect(result).toBe('RROO');
     })
-    
+    it("Test de 15 simple heures", function(){
+        const result = main.getFiveHoursRow(15);
+        expect(result).toBe('RRRO');
+    })
 
 })
