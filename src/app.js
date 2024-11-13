@@ -17,4 +17,12 @@ export class Main{
         }
         return res.join("");
     }
+    getOneHourRow(hours) {
+        let res = ["O", "O", "O", "O"];
+        let HoursOn = hours % 5;
+        for (let j = 0; j < HoursOn; j++) {
+            res[j] = "R";
+        }
+        return res.join("");
+    }
 }

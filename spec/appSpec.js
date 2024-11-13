@@ -96,3 +96,14 @@ describe("getFiveMinutesRow function should return the Berlin five minutes of a 
 
 
 })
+
+describe("getOneHourRow function should return the Berlin simple hours of a digital hour", function(){
+    const main = new Main();
+
+    it("Test de 0 simple heure", function(){
+        const result = main.getOneHourRow(0);
+        expect(result).toBe('OOOO');
+    })
+
+
+})
