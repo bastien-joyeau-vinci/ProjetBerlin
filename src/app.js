@@ -1,11 +1,10 @@
 export class Main{
-    getSimpleMinutes(minutes) {
-        const lamps = ['O', 'O', 'O', 'O'];
-
-        for(let i = 0; i<minutes; i++){
-            lamps[i] = 'Y';
+    getOneMinuteRow(minutes) {
+        let res = ["O", "O", "O", "O"];
+        let i = minutes % 5;
+        for (let j = 0; j < i; j++) {
+            res[j] = "Y";
         }
-
-        return lamps;
+        return res.join("");
     }
 }
