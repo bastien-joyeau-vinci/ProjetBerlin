@@ -18,4 +18,9 @@ describe("getOneMinuteRow function should return the Berlin simple minutes of a 
         expect(result).toBe('YYOO');
     })
 
+    it("Test de 3 simple minutes", function(){
+        const result = main.getOneMinuteRow(3);
+        expect(result).toBe('YYYO');
+    })
+
 })
