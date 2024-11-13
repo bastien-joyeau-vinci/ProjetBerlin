@@ -37,5 +37,18 @@ export class Main{
     getSeconds(seconds) { 
         if(seconds%2 == 0) return "R"; return "O"; 
         }
-        
+    
+    getWholeClock(timestamp){
+        let date = new Date(timestamp*1000);
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
+        let res = [];
+        res.push(this.getSeconds(seconds));
+        res.push(this.getFiveHoursRow(hours));
+        res.push(this.getOneHourRow(hours));
+        res.push(this.getFiveMinutesRow(minutes));
+        res.push(this.getOneMinuteRow(minutes));
+        return res.join("\n");
+    }
 }
