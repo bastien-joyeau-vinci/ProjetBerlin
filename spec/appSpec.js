@@ -157,4 +157,10 @@ describe("getSeconds function should return the Berlin seconds of a digital hour
     expect(result).toBe('R');
   })
 
+  it("Test de 1 secondes", function () {
+    const result = main. getSeconds (1);
+    expect(result).toBe('O');
+  })
+
+
 })
