@@ -116,4 +116,8 @@ describe("getOneHourRow function should return the Berlin simple hours of a digi
         const result = main.getOneHourRow(3);
         expect(result).toBe('RRRO');
     })
+    it("Test de 4 simple heures", function(){
+        const result = main.getOneHourRow(4);
+        expect(result).toBe('RRRR');
+    })
 })
