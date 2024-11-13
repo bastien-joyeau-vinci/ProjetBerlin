@@ -166,7 +166,7 @@ describe("getWholeClock function should return the Berlin clock of a digital hou
   const main = new Main();
 
   it("Test de 20:36:37", function () {
-    const result = main.getWholeClock(1731526655);
+    const result = main.getWholeClock(70597);
     expect(result).toBe("O\nRRRR\nOOOO\nYYRYYRYOOOO\nYOOO");
   });
 
