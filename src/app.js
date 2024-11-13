@@ -25,4 +25,12 @@ export class Main{
         }
         return res.join("");
     }
+    GetFiveHoursRow(hours){
+        let res = ["O", "O", "O", "O"];
+        let FiveHoursOn = Math.floor(hours / 5);
+        for (let j = 0; j < FiveHoursOn; j++) {
+            res[j] = "R";
+        }
+        return res.join("");
+    }
 }

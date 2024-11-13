@@ -121,3 +121,15 @@ describe("getOneHourRow function should return the Berlin simple hours of a digi
         expect(result).toBe('RRRR');
     })
 })
+
+describe("getFiveHourRow function should return the Berlin Five hours of a digital hour", function(){
+    const main = new Main();
+
+    it("Test of 0  heure", function(){
+        const result = main.getOneHourRow(4);
+        expect(result).toBe('RRRR');
+    })
+
+    
+
+})
